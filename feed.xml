@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://cspdf-bphc.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cspdf-bphc.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-06-09T02:03:31-05:00</updated><id>https://cspdf-bphc.github.io/blog/feed.xml</id><title type="html">CSPDF BPHC</title><subtitle>Blog from BPHC for Machine Learning Related research papers.</subtitle><entry><title type="html">Fastpages Notebook Blog Post</title><link href="https://cspdf-bphc.github.io/blog/jupyter/2020/02/20/test.html" rel="alternate" type="text/html" title="Fastpages Notebook Blog Post" /><published>2020-02-20T00:00:00-06:00</published><updated>2020-02-20T00:00:00-06:00</updated><id>https://cspdf-bphc.github.io/blog/jupyter/2020/02/20/test</id><content type="html" xml:base="https://cspdf-bphc.github.io/blog/jupyter/2020/02/20/test.html">&lt;!--
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://cspdf-bphc.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cspdf-bphc.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-07-09T06:40:51-05:00</updated><id>https://cspdf-bphc.github.io/blog/feed.xml</id><title type="html">CSPDF BPHC</title><subtitle>Blog from BPHC for Machine Learning Related research papers.</subtitle><entry><title type="html">Contributing</title><link href="https://cspdf-bphc.github.io/blog/2020/06/10/contributing.html" rel="alternate" type="text/html" title="Contributing" /><published>2020-06-10T00:00:00-05:00</published><updated>2020-06-10T00:00:00-05:00</updated><id>https://cspdf-bphc.github.io/blog/2020/06/10/contributing</id><content type="html" xml:base="https://cspdf-bphc.github.io/blog/2020/06/10/contributing.html">&lt;h1 id=&quot;contributing-guidelines&quot;&gt;Contributing Guidelines&lt;/h1&gt;
+
+&lt;p&gt;This repository partially uses the ‘Git’ Workflow.There are separate master/release and dev branches.The features which you work on get merged with dev once they are reviewed.The dev branch is merged with master/release branch whenever significant changes are made.&lt;/p&gt;
+
+&lt;p&gt;We love contributions and would be glad to see your implementations/blogs. That out of the way, an average contribution would involve the following:&lt;/p&gt;
+
+&lt;h2 id=&quot;steps&quot;&gt;Steps&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Fork this repository in your account.&lt;/li&gt;
+  &lt;li&gt;Clone it on your local machine.&lt;/li&gt;
+  &lt;li&gt;Add a new remote using &lt;code class=&quot;highlighter-rouge&quot;&gt;git remote add upstream https://github.com/cspdf-bphc/blog.git&lt;/code&gt; (or use SSH).&lt;/li&gt;
+  &lt;li&gt;Create a new feature branch with &lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout -b my-feature&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Make your changes.
+    &lt;ul&gt;
+      &lt;li&gt;To add a blog post, go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;\_posts&lt;/code&gt; directory. Blog posts, such as this one, are written in markdown. Make sure you follow the &lt;code class=&quot;highlighter-rouge&quot;&gt;README.md&lt;/code&gt; before you finish changes.&lt;/li&gt;
+      &lt;li&gt;To add an implementation of a paper, go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;\_notebooks&lt;/code&gt; directory, and follow the test post, and follow the &lt;code class=&quot;highlighter-rouge&quot;&gt;README.md&lt;/code&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Commit your changes (See &lt;a href=&quot;#commit-message-guidelines&quot;&gt;Guidelines&lt;/a&gt;).&lt;/li&gt;
+  &lt;li&gt;Rebase your commits with &lt;code class=&quot;highlighter-rouge&quot;&gt;upstream/dev&lt;/code&gt;:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout dev&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git fetch upstream dev&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git reset --hard FETCH_HEAD&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout my-feature&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git rebase dev&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Resolve any merge conflicts, and then push the branch with &lt;code class=&quot;highlighter-rouge&quot;&gt;git push origin my-feature&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Create a Pull Request detailing the changes you made and wait for review/merge.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;It might seem a little complicated at a glance, but the fundamental concept is simple: we want to ensure that your changes are always made on top of the latest changes to the project and thus, we can easily merge your code. If you are facing any troubles, create a PR as you usually would and we would merge it manually. :)&lt;/p&gt;
+
+&lt;h2 id=&quot;commit-message-guidelines&quot;&gt;Commit Message Guidelines&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Use the present tense (“Add feature” not “Added feature”)&lt;/li&gt;
+  &lt;li&gt;Use imperative mood (e.g., “Fix …”, “Add …” instead of “Fixes …”, “Adds …”)&lt;/li&gt;
+  &lt;li&gt;Limit the first line to 72 characters or less&lt;/li&gt;
+  &lt;li&gt;Keep it short, while concisely explaining what the commit does.&lt;/li&gt;
+  &lt;li&gt;Message should be clear about what part of the code is affected – often by prefixing with the name of the subsystem and a colon, like “backend: …” or “docs: …”.&lt;/li&gt;
+  &lt;li&gt;First line should NOT end with a period.&lt;/li&gt;
+  &lt;li&gt;Reference the relevant Issue or Pull Request in a new line at the end of the message.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Contributing Guidelines</summary></entry><entry><title type="html">Fastpages Notebook Blog Post</title><link href="https://cspdf-bphc.github.io/blog/jupyter/2020/02/20/test.html" rel="alternate" type="text/html" title="Fastpages Notebook Blog Post" /><published>2020-02-20T00:00:00-06:00</published><updated>2020-02-20T00:00:00-06:00</updated><id>https://cspdf-bphc.github.io/blog/jupyter/2020/02/20/test</id><content type="html" xml:base="https://cspdf-bphc.github.io/blog/jupyter/2020/02/20/test.html">&lt;!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################

@@ -1,0 +1,44 @@
+<h1 id="contributing-guidelines">Contributing Guidelines</h1>
+
+<p>This repository partially uses the ‘Git’ Workflow.There are separate master/release and dev branches.The features which you work on get merged with dev once they are reviewed.The dev branch is merged with master/release branch whenever significant changes are made.</p>
+
+<p>We love contributions and would be glad to see your implementations/blogs. That out of the way, an average contribution would involve the following:</p>
+
+<h2 id="steps">Steps</h2>
+<ol>
+  <li>Fork this repository in your account.</li>
+  <li>Clone it on your local machine.</li>
+  <li>Add a new remote using <code class="highlighter-rouge">git remote add upstream https://github.com/cspdf-bphc/blog.git</code> (or use SSH).</li>
+  <li>Create a new feature branch with <code class="highlighter-rouge">git checkout -b my-feature</code>.</li>
+  <li>Make your changes.
+    <ul>
+      <li>To add a blog post, go to the <code class="highlighter-rouge">\_posts</code> directory. Blog posts, such as this one, are written in markdown. Make sure you follow the <code class="highlighter-rouge">README.md</code> before you finish changes.</li>
+      <li>To add an implementation of a paper, go to the <code class="highlighter-rouge">\_notebooks</code> directory, and follow the test post, and follow the <code class="highlighter-rouge">README.md</code>.</li>
+    </ul>
+  </li>
+  <li>Commit your changes (See <a href="#commit-message-guidelines">Guidelines</a>).</li>
+  <li>Rebase your commits with <code class="highlighter-rouge">upstream/dev</code>:
+    <ul>
+      <li><code class="highlighter-rouge">git checkout dev</code></li>
+      <li><code class="highlighter-rouge">git fetch upstream dev</code></li>
+      <li><code class="highlighter-rouge">git reset --hard FETCH_HEAD</code></li>
+      <li><code class="highlighter-rouge">git checkout my-feature</code></li>
+      <li><code class="highlighter-rouge">git rebase dev</code></li>
+    </ul>
+  </li>
+  <li>Resolve any merge conflicts, and then push the branch with <code class="highlighter-rouge">git push origin my-feature</code>.</li>
+  <li>Create a Pull Request detailing the changes you made and wait for review/merge.</li>
+</ol>
+
+<p>It might seem a little complicated at a glance, but the fundamental concept is simple: we want to ensure that your changes are always made on top of the latest changes to the project and thus, we can easily merge your code. If you are facing any troubles, create a PR as you usually would and we would merge it manually. :)</p>
+
+<h2 id="commit-message-guidelines">Commit Message Guidelines</h2>
+<ul>
+  <li>Use the present tense (“Add feature” not “Added feature”)</li>
+  <li>Use imperative mood (e.g., “Fix …”, “Add …” instead of “Fixes …”, “Adds …”)</li>
+  <li>Limit the first line to 72 characters or less</li>
+  <li>Keep it short, while concisely explaining what the commit does.</li>
+  <li>Message should be clear about what part of the code is affected – often by prefixing with the name of the subsystem and a colon, like “backend: …” or “docs: …”.</li>
+  <li>First line should NOT end with a period.</li>
+  <li>Reference the relevant Issue or Pull Request in a new line at the end of the message.</li>
+</ul>
